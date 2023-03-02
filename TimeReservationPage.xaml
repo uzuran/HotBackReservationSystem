@@ -5,7 +5,7 @@
              Title="Time Reservation">
     <VerticalStackLayout>
         <Label 
-            Text="Choese time reservation"
+            Text="Choose time reservation"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             SemanticProperties.HeadingLevel="Level1"

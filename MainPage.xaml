@@ -33,7 +33,7 @@
                 x:Name="CreateReservation"
                 Text="Create reservation"
                 SemanticProperties.Hint="Go to the reservation page"
-                Clicked="Button_Clicked"
+                Clicked="GoToReservationPage"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

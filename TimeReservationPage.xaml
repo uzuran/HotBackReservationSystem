@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HotBackReservationSystem.ReservationPage"
-             Title="Reservation Page">
+             x:Class="HotBackReservationSystem.TimeReservationPage"
+             Title="Time Reservation">
     <VerticalStackLayout>
         <Label 
-            Text="Create your reservation"
+            Text="Choese time reservation"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
             SemanticProperties.HeadingLevel="Level1"
@@ -14,12 +14,12 @@
 
 
         <Button
-                x:Name="CreateTimeReservation"
-                Text="Create time reservation"
-                SemanticProperties.Hint="Go to the time reservation page"
-                Clicked="GoToTimeReservationPage"
+                x:Name="CreateReservation"
+                Text="Create your reservation"
+                SemanticProperties.Hint="Go to the registration success page"
+                Clicked="GoToReservationSuccessPage"
                 HorizontalOptions="Center" />
-        
-        
+
+
     </VerticalStackLayout>
 </ContentPage>

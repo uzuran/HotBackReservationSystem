@@ -6,4 +6,10 @@ public partial class ReservationPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void GoToTimeReservationPage(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(TimeReservationPage));
+
+    }
 }

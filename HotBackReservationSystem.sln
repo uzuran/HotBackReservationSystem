@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotBackReservationSystem", "HotBackReservationSystem.csproj", "{B762B979-40BA-4622-ABF2-F9FDE2E68F95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "C:\Users\elsea\source\repos\Test\Test.csproj", "{7C36DDCE-C502-4607-9FE2-72A61CCAD4BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{B762B979-40BA-4622-ABF2-F9FDE2E68F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B762B979-40BA-4622-ABF2-F9FDE2E68F95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B762B979-40BA-4622-ABF2-F9FDE2E68F95}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7C36DDCE-C502-4607-9FE2-72A61CCAD4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C36DDCE-C502-4607-9FE2-72A61CCAD4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C36DDCE-C502-4607-9FE2-72A61CCAD4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C36DDCE-C502-4607-9FE2-72A61CCAD4BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

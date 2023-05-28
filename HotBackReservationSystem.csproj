@@ -53,15 +53,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ReservationPage.xaml">
+	  <MauiXaml Update="Views\ReservationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ReservationSuccessPage.xaml">
+	  <MauiXaml Update="Views\ReservationSuccessPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="TimeReservationPage.xaml">
+	  <MauiXaml Update="Views\TimeReservationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Model\" />
+	  <Folder Include="ViewModel\" />
 	</ItemGroup>
 
 </Project>

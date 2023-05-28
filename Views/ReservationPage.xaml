@@ -11,14 +11,25 @@
             SemanticProperties.HeadingLevel="Level1"
             FontSize="32"
             />
-
+        <!--Date label-->
+        <StackLayout Padding="20">
+            <Label HorizontalOptions="Center"
+                   x:Name="myLabel"/>
+        </StackLayout>
+        
+        <!--Calendar-->
+        <StackLayout x:Name="myCalednarLayout"
+                     Orientation ="Vertical"
+                     >
+        </StackLayout>
 
         <Button
                 x:Name="CreateTimeReservation"
                 Text="Create time reservation"
                 SemanticProperties.Hint="Go to the time reservation page"
                 Clicked="GoToTimeReservationPage"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                Margin="20"/>
         
         
     </VerticalStackLayout>

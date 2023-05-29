@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HotBackReservationSystem.ReservationPage"
+             xmlns:local="clr-namespace:HotBackReservationSystem"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+
              Title="Reservation Page">
     <VerticalStackLayout>
         <Label 
@@ -11,16 +14,24 @@
             SemanticProperties.HeadingLevel="Level1"
             FontSize="32"
             />
-        <!--Date label-->
-        <StackLayout Padding="20">
-            <Label HorizontalOptions="Center"
-                   x:Name="myLabel"/>
-        </StackLayout>
         
-        <!--Calendar-->
-        <StackLayout x:Name="myCalednarLayout"
-                     Orientation ="Vertical"
-                     >
+        <Label x:Name="DateLabel"
+               FontSize="Title"
+               HorizontalOptions="Center"/>
+
+
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding DaysOfMonth}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Text="{Binding Day}" WidthRequest="75" HeightRequest="75" CornerRadius="60" BackgroundColor="#eb8934"
+                        Command="{Binding BindingContext.DaySelectedCommand, Source={x:Reference TimeReservationPage}}"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="5" Orientation="Vertical" VerticalItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+            </CollectionView>
         </StackLayout>
 
         <Button
